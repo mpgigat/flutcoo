@@ -26,16 +26,16 @@ class BoardTile extends StatelessWidget {
       ),
 
       margin: const EdgeInsets.all(1.5),
-      height:wordComplete == "COORPORATIVO" ? 26
+      height:wordComplete == "COOPERATIVO" ? 30
           :wordComplete == "MARFILES" ? 35
           :wordComplete == "PESEM" ? 38
           :wordComplete == "CUATRO" ? 36
-          : 40,
-      width:wordComplete == "COORPORATIVO" ? 24
+          : 30,
+      width:wordComplete == "COOPERATIVO" ? 30
           : wordComplete == "MARFILES" ? 35
           :wordComplete == "PESEM" ? 38
           :wordComplete == "CUATRO" ? 36
-          :40,
+          :30,
       alignment: Alignment.center,
       decoration: BoxDecoration(
         color: letter.backgroundColor,
@@ -45,8 +45,7 @@ class BoardTile extends StatelessWidget {
       child: Text(
         letter.val,
         style:  TextStyle(
-          fontSize: wordComplete == "COORPORATIVO" ? 18
-              :wordComplete == "MARFILES" ? 25:30,
+          fontSize:wordComplete == "MARFILES" || wordComplete == "COOPERATIVO" ? 25:30,
           fontWeight: FontWeight.bold,
         ),
       ),

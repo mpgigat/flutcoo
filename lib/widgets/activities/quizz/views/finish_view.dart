@@ -19,7 +19,7 @@ class FinishScreen extends StatelessWidget {
             children:[
               //insertar imagen sobre el texto
               const Spacer(flex: 5,),
-              const Image(image: AssetImage("assets/images/logo.png"),),
+              const Image(image: AssetImage('assets/activities/quizz/logo.png'),),
               const Spacer(flex: 1,),
               const Text("Fin del Quizz",
                   style:TextStyle(
