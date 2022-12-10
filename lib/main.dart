@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:pruebaflutter1/screens/homescreen.dart';
 import 'package:pruebaflutter1/screens/identidadscreen.dart';
 import 'package:pruebaflutter1/screens/pesemscreen.dart';
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light);
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Coomuldesa',
       initialRoute: 'homescreen',

@@ -83,8 +83,14 @@ class QuestionsDate extends GetxController
           curve: Curves.ease);
 
       _questionNumber.value++;
-    }else{
-      Get.to(() => FinishScreen());
+      print("siguiente pregunta");
+    }else {
+      //mostrar por consola el numero de respuestas correctas
+      print("termino el quizz");
+      //abrir la vista de finalizacion usando un contexto sin usar Get.to
+
+      Get.to(FinishScreen());
+
     }
 
 
